@@ -13,35 +13,36 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div class="form-group">
-                <div class="row">
-                    <p class="font-weight-bold">Cadastro de Pessoa</p>
+            
+                    <h1>Cadastro de Pessoa</h1>
                     <br />
-                    
-                    <label>Nome: </label>
-                    <asp:TextBox ID="txtNome" runat="server" Width="50%" CssClass="form-control"></asp:TextBox>
+
+                    <div class="form-group">
+                    <label for="txtNome">Nome: </label>
+                    <asp:TextBox ID="txtNome" runat="server" Width="50%" CssClass="form-control"></asp:TextBox><br />
                     <asp:RequiredFieldValidator ID="requiredNome" runat="server" ControlToValidate="txtNome" ErrorMessage="Digite um nome !" ForeColor="Red" />  
-                    
-                    <label>Endereço: </label>
-                    <br />
-                    <asp:TextBox ID="txtEndereco" runat="server" Width="50%" CssClass="form-control"></asp:TextBox>
+                    </div> 
+
+                    <div class="form-group">
+                    <label for="txtEndereco">Endereço: </label>
+                    <asp:TextBox ID="txtEndereco" runat="server" Width="50%" CssClass="form-control"></asp:TextBox><br />
                     <asp:RequiredFieldValidator ID="requiredEndereco" runat="server" ControlToValidate="txtEndereco" ErrorMessage="Digite um endereço !" ForeColor="Red" />
-                    <br />
-                    <br />
+                    </div>
+
+                    <div class="form-group">
                     <label>Email: </label>
-                    <br />
-                    
                     <asp:TextBox ID="txtEmail" runat="server" Width="50%" CssClass="form-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="requiredEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Digite um email !" ForeColor="Red" />
+                    </div>
+
                     <p>
                         <asp:Label ID="lblMensagem" runat="server" />
                     </p>
-
+                    
+                    <asp:Button ID="btnCadastrar" runat="server" CssClass="btn btn-success btn-lg" Width="30%" Text="Cadastrar" OnClick="BtnCadastrarPessoa" />
+                    <a href="/Default.aspx" class="btn btn-default btn-lg">Voltar</a>
                 </div>
-                <asp:Button ID="btnCadastrar" runat="server" CssClass="btn btn-lg btn-sucess btn-block" Width="30%" Text="Cadastrar" OnClick="BtnCadastrarPessoa" />
-                <a href="/Default.aspx" class="btn btn-default btn-lg">Voltar</a>
-            </div>
-        </div>
+                    
     </form>
 </body>
 </html>
