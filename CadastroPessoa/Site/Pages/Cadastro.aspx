@@ -14,7 +14,9 @@
     <form id="form1" runat="server">
         <div class="container">
             
-                    <h1>Cadastro de Pessoa</h1>
+                    <nav class="navbar navbar-light bg-light">
+                        <span class="navbar-brand mb-0 h1">Cadastro de Pessoas</span>
+                    </nav>
                     <br />
 
                     <div class="form-group">
