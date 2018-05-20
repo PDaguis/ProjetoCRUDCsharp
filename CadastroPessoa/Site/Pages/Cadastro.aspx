@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="../Content/bootstrap.css" />
     <script src="../Scripts/jquery-1.9.1.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
-    <title></title>
+    <title>Cadastro</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -42,7 +42,7 @@
                     </p>
                     
                     <asp:Button ID="btnCadastrar" runat="server" CssClass="btn btn-success btn-lg" Width="30%" Text="Cadastrar" OnClick="BtnCadastrarPessoa" />
-                    <a href="/Default.aspx" class="btn btn-default btn-lg">Voltar</a>
+                    <a href="/Default.aspx" class="btn btn-light btn-lg">Voltar</a>
                 </div>
                     
     </form>

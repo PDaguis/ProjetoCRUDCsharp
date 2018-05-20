@@ -34,9 +34,9 @@
                         <asp:Label ID="lblMensagem" runat="server"/> 
                     </p>
                     
-                    <a href="/Default.aspx" class="btn btn-default">Voltar</a>
+                    
                 </div>
-            
+            <a href="/Default.aspx" class="btn btn-light">Voltar</a>
         </div>
     </form>
 </body>

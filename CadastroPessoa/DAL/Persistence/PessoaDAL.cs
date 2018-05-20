@@ -81,16 +81,16 @@ namespace DAL.Persistence
             try
             {
                 AbrirConexao();
-                cmd = new SqlCommand("BuscarPorCodigo", con);
+                cmd = new SqlCommand("[dbo].[BuscarPorCodigo]", con);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Codigo", codigo);
+                dr = cmd.ExecuteReader();// executa a leitura das informações do BD
 
                 Pessoa p = null;
 
                 if (dr.Read())
                 {
                     p = new Pessoa();
-                    p.Codigo = Convert.ToInt32(dr["codigo"]);
                     p.Nome = Convert.ToString(dr["nome"]);
                     p.Endereco = Convert.ToString(dr["endereco"]);
                     p.Email = Convert.ToString(dr["email"]);
